@@ -8,7 +8,7 @@ A little demo app to use some of the features of the monzo api (somewhat repurpo
 
 | Auth Flow | Transactions |
 | --- | --- |
-| ![](/Users/daniel/Desktop/fullAuth.gif) | ![](/Users/daniel/Desktop/refresh.gif)  |
+| ![](README_assets/fullAuth.gif) | ![](README_assets/refresh.gif)  |
 
 ### Currently implemented
 
@@ -114,9 +114,9 @@ There are 4 separate libraries which I have been messing around with:
 ### More on Debug
 |  Feature | poorly compressed gif |
 | --- | :---: |
-| Replayable history of application model | ![](/Users/daniel/Desktop/debug.gif)  <br> <br> Edge swipe from the right to show a table view where the rows are each of the `messages` received and the resulting `model` after each message. Clicking on a row will reset to that respective `model`. It will update the view but it will not run any `commands` that may have been assosciated with the update that created this version of the `model`. The UI set up is achieved with some very hacky bounds and transform manipulation and the debug viewController acting as a container for both the history view and the application view.
-| Manipulating the state of the app by sending messages | ![](/Users/daniel/Desktop/debugAddTransactions.gif)  <br> <br>  here we are in lldb and create a variable which is a function that generates a message with 10 random `Transaction`s. called `randomTransactionMessage`. we can then use this to update the program with `e Current.update(message: randomTransactionMessage())`
-| Manipulating model directly | ![](/Users/daniel/Desktop/checkModel.gif) <br> <br> Here we set the `Current.model` to `Model.initial`, check it with `po Current.model` and later send a message to start the aut process  |
+| Replayable history of application model | ![](README_assets/debug.gif)  <br> <br> Edge swipe from the right to show a table view where the rows are each of the `messages` received and the resulting `model` after each message. Clicking on a row will reset to that respective `model`. It will update the view but it will not run any `commands` that may have been assosciated with the update that created this version of the `model`. The UI set up is achieved with some very hacky bounds and transform manipulation and the debug viewController acting as a container for both the history view and the application view.
+| Manipulating the state of the app by sending messages | ![](README_assets/debugAddTransactions.gif)  <br> <br>  here we are in lldb and create a variable which is a function that generates a message with 10 random `Transaction`s. called `randomTransactionMessage`. we can then use this to update the program with `e Current.update(message: randomTransactionMessage())`
+| Manipulating model directly | ![](README_assets/checkModel.gif) <br> <br> Here we set the `Current.model` to `Model.initial`, check it with `po Current.model` and later send a message to start the aut process  |
 
 
 # Next steps
