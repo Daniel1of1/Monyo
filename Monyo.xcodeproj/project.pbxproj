@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07784F471905EA9629169F69 /* Pods_MonyoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8475072D2980E485EAF1920F /* Pods_MonyoTests.framework */; };
+		197BA36BF8F3F28DDFB44850 /* Pods_Monyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE15A2175BD2CDE8F3123C76 /* Pods_Monyo.framework */; };
+		6517CA81229985350094ABE6 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CA80229985350094ABE6 /* Program.swift */; };
+		6517CA9D229EEEE40094ABE6 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CA90229EEEE40094ABE6 /* Update.swift */; };
+		6517CA9E229EEEE40094ABE6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CA92229EEEE40094ABE6 /* Model.swift */; };
+		6517CA9F229EEEE40094ABE6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CA94229EEEE40094ABE6 /* RootViewController.swift */; };
+		6517CAA1229EEEE40094ABE6 /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CA97229EEEE40094ABE6 /* TransactionListViewController.swift */; };
+		6517CAA2229EEEE40094ABE6 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CA99229EEEE40094ABE6 /* AuthenticationViewController.swift */; };
+		6517CAA4229EEF320094ABE6 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAA3229EEF320094ABE6 /* Start.swift */; };
+		6517CAAD229F0B220094ABE6 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAA9229F0B220094ABE6 /* Commands.swift */; };
+		6517CAAE229F0B220094ABE6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAAA229F0B220094ABE6 /* Util.swift */; };
+		6517CAAF229F0B220094ABE6 /* Command+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAAB229F0B220094ABE6 /* Command+Combine.swift */; };
+		6517CAB0229F0B220094ABE6 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAAC229F0B220094ABE6 /* World.swift */; };
+		6517CAB5229F0D3C0094ABE6 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAB4229F0D3C0094ABE6 /* Debug.swift */; };
+		6517CAB7229F10600094ABE6 /* MonyoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAB6229F10600094ABE6 /* MonyoError.swift */; };
+		6517CAB9229F1CE00094ABE6 /* UIViewController+embedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAB8229F1CE00094ABE6 /* UIViewController+embedding.swift */; };
+		6517CABD229F33D70094ABE6 /* EquatableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CABC229F33D70094ABE6 /* EquatableError.swift */; };
+		6517CABF229F37870094ABE6 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CABE229F37870094ABE6 /* Authentication.swift */; };
+		6517CAC122A0778E0094ABE6 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAC022A0778E0094ABE6 /* TransactionTableViewCell.swift */; };
+		6517CAC522A07F480094ABE6 /* TransactionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CAC422A07F480094ABE6 /* TransactionRowView.swift */; };
+		6517CB0C22A08F760094ABE6 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CB0B22A08F760094ABE6 /* IconView.swift */; };
+		6517CB0E22A0BFD30094ABE6 /* BaseCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CB0D22A0BFD30094ABE6 /* BaseCredentials.swift */; };
+		6517CB1122A0D7220094ABE6 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6517CB1022A0D7220094ABE6 /* Mocks.swift */; };
+		65200F04228E0CA800D5BC48 /* Cont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65200F03228E0CA800D5BC48 /* Cont.swift */; };
+		6542FB3A2296DCB500419846 /* CommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6542FB392296DCB500419846 /* CommandTests.swift */; };
+		659E9041228E03EA00DCDB7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9040228E03EA00DCDB7A /* AppDelegate.swift */; };
+		659E9048228E03EB00DCDB7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659E9047228E03EB00DCDB7A /* Assets.xcassets */; };
+		659E904B228E03EB00DCDB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659E9049228E03EB00DCDB7A /* LaunchScreen.storyboard */; };
+		659E9056228E03EC00DCDB7A /* ModelUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9055228E03EC00DCDB7A /* ModelUpdateTests.swift */; };
+		659E906C228E04A800DCDB7A /* UnconfidentialBaseCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9062228E047900DCDB7A /* UnconfidentialBaseCredentials.swift */; };
+		659E906D228E04A800DCDB7A /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9063228E047900DCDB7A /* Tokens.swift */; };
+		659E906E228E04A800DCDB7A /* URLRequest+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9064228E047900DCDB7A /* URLRequest+Auth.swift */; };
+		659E906F228E04AC00DCDB7A /* URLRequest+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9066228E047C00DCDB7A /* URLRequest+Account.swift */; };
+		659E9070228E04AC00DCDB7A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9067228E047C00DCDB7A /* Account.swift */; };
+		659E9071228E04AF00DCDB7A /* TransactionQueryOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9069228E049A00DCDB7A /* TransactionQueryOptions.swift */; };
+		659E9072228E04AF00DCDB7A /* URLRequest+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E906A228E049A00DCDB7A /* URLRequest+Transaction.swift */; };
+		659E9073228E04AF00DCDB7A /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E906B228E049A00DCDB7A /* Transaction.swift */; };
+		659E9075228E04DC00DCDB7A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9074228E04DB00DCDB7A /* Utility.swift */; };
+		659E9078228E094100DCDB7A /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E9077228E094100DCDB7A /* ErrorResponse.swift */; };
+		65CA7CF822942953000A2198 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA7CF722942953000A2198 /* Decoder.swift */; };
+		65CA7CFA22942984000A2198 /* MonzoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA7CF922942984000A2198 /* MonzoError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		659E9052228E03EC00DCDB7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659E9035228E03EA00DCDB7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 659E903C228E03EA00DCDB7A;
+			remoteInfo = Monyo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2515A747E3EF3EDD72F57B2E /* Pods-Monyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monyo.release.xcconfig"; path = "Target Support Files/Pods-Monyo/Pods-Monyo.release.xcconfig"; sourceTree = "<group>"; };
+		6517CA80229985350094ABE6 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		6517CA90229EEEE40094ABE6 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		6517CA92229EEEE40094ABE6 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6517CA94229EEEE40094ABE6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		6517CA97229EEEE40094ABE6 /* TransactionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
+		6517CA99229EEEE40094ABE6 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		6517CAA3229EEF320094ABE6 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		6517CAA9229F0B220094ABE6 /* Commands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+		6517CAAA229F0B220094ABE6 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		6517CAAB229F0B220094ABE6 /* Command+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Command+Combine.swift"; sourceTree = "<group>"; };
+		6517CAAC229F0B220094ABE6 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		6517CAB4229F0D3C0094ABE6 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		6517CAB6229F10600094ABE6 /* MonyoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonyoError.swift; sourceTree = "<group>"; };
+		6517CAB8229F1CE00094ABE6 /* UIViewController+embedding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+embedding.swift"; sourceTree = "<group>"; };
+		6517CABC229F33D70094ABE6 /* EquatableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableError.swift; sourceTree = "<group>"; };
+		6517CABE229F37870094ABE6 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		6517CAC022A0778E0094ABE6 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		6517CAC422A07F480094ABE6 /* TransactionRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionRowView.swift; sourceTree = "<group>"; };
+		6517CB0B22A08F760094ABE6 /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		6517CB0D22A0BFD30094ABE6 /* BaseCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCredentials.swift; sourceTree = "<group>"; };
+		6517CB1022A0D7220094ABE6 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		65200F03228E0CA800D5BC48 /* Cont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cont.swift; sourceTree = "<group>"; };
+		6542FB392296DCB500419846 /* CommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTests.swift; sourceTree = "<group>"; };
+		659E903D228E03EA00DCDB7A /* Monyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		659E9040228E03EA00DCDB7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		659E9047228E03EB00DCDB7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		659E904A228E03EB00DCDB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		659E904C228E03EB00DCDB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659E9051228E03EC00DCDB7A /* MonyoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonyoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		659E9055228E03EC00DCDB7A /* ModelUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdateTests.swift; sourceTree = "<group>"; };
+		659E9057228E03EC00DCDB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659E9062228E047900DCDB7A /* UnconfidentialBaseCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnconfidentialBaseCredentials.swift; sourceTree = "<group>"; };
+		659E9063228E047900DCDB7A /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		659E9064228E047900DCDB7A /* URLRequest+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Auth.swift"; sourceTree = "<group>"; };
+		659E9066228E047C00DCDB7A /* URLRequest+Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Account.swift"; sourceTree = "<group>"; };
+		659E9067228E047C00DCDB7A /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		659E9069228E049A00DCDB7A /* TransactionQueryOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionQueryOptions.swift; sourceTree = "<group>"; };
+		659E906A228E049A00DCDB7A /* URLRequest+Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Transaction.swift"; sourceTree = "<group>"; };
+		659E906B228E049A00DCDB7A /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		659E9074228E04DB00DCDB7A /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		659E9077228E094100DCDB7A /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		65CA7CF722942953000A2198 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		65CA7CF922942984000A2198 /* MonzoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonzoError.swift; sourceTree = "<group>"; };
+		8475072D2980E485EAF1920F /* Pods_MonyoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonyoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA855E97349A8CBC394C2EEB /* Pods-Monyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monyo.debug.xcconfig"; path = "Target Support Files/Pods-Monyo/Pods-Monyo.debug.xcconfig"; sourceTree = "<group>"; };
+		BBC59B9E4A83A26327663996 /* Pods-MonyoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonyoTests.release.xcconfig"; path = "Target Support Files/Pods-MonyoTests/Pods-MonyoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F441141854504D8D7F01F53D /* Pods-MonyoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonyoTests.debug.xcconfig"; path = "Target Support Files/Pods-MonyoTests/Pods-MonyoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE15A2175BD2CDE8F3123C76 /* Pods_Monyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monyo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		659E903A228E03EA00DCDB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197BA36BF8F3F28DDFB44850 /* Pods_Monyo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659E904E228E03EC00DCDB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07784F471905EA9629169F69 /* Pods_MonyoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59C9D647F9525E744BCAD95E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE15A2175BD2CDE8F3123C76 /* Pods_Monyo.framework */,
+				8475072D2980E485EAF1920F /* Pods_MonyoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6517CA7F229984770094ABE6 /* Program */ = {
+			isa = PBXGroup;
+			children = (
+				6517CA80229985350094ABE6 /* Program.swift */,
+			);
+			path = Program;
+			sourceTree = "<group>";
+		};
+		6517CA8F229EEEE40094ABE6 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				6517CA90229EEEE40094ABE6 /* Update.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
+		6517CA91229EEEE40094ABE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6517CA92229EEEE40094ABE6 /* Model.swift */,
+				6517CABE229F37870094ABE6 /* Authentication.swift */,
+				6517CABC229F33D70094ABE6 /* EquatableError.swift */,
+				6517CAB6229F10600094ABE6 /* MonyoError.swift */,
+				6517CB0D22A0BFD30094ABE6 /* BaseCredentials.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6517CA93229EEEE40094ABE6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				659E9040228E03EA00DCDB7A /* AppDelegate.swift */,
+				6517CA94229EEEE40094ABE6 /* RootViewController.swift */,
+				6517CA98229EEEE40094ABE6 /* Authentication */,
+				6517CA95229EEEE40094ABE6 /* TransactionList */,
+				6517CAB8229F1CE00094ABE6 /* UIViewController+embedding.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6517CA95229EEEE40094ABE6 /* TransactionList */ = {
+			isa = PBXGroup;
+			children = (
+				6517CA97229EEEE40094ABE6 /* TransactionListViewController.swift */,
+				6517CAC022A0778E0094ABE6 /* TransactionTableViewCell.swift */,
+				6517CAC422A07F480094ABE6 /* TransactionRowView.swift */,
+				6517CB0B22A08F760094ABE6 /* IconView.swift */,
+			);
+			path = TransactionList;
+			sourceTree = "<group>";
+		};
+		6517CA98229EEEE40094ABE6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6517CA99229EEEE40094ABE6 /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6517CAA7229F092E0094ABE6 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				6517CB1022A0D7220094ABE6 /* Mocks.swift */,
+				6517CAB4229F0D3C0094ABE6 /* Debug.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		6517CAA8229F0B220094ABE6 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				6517CAAC229F0B220094ABE6 /* World.swift */,
+				6517CAA9229F0B220094ABE6 /* Commands.swift */,
+				6517CAAB229F0B220094ABE6 /* Command+Combine.swift */,
+				6517CAAA229F0B220094ABE6 /* Util.swift */,
+			);
+			name = Commands;
+			path = Monyo/Commands;
+			sourceTree = SOURCE_ROOT;
+		};
+		65200F05228E0CAD00D5BC48 /* Cont */ = {
+			isa = PBXGroup;
+			children = (
+				65200F03228E0CA800D5BC48 /* Cont.swift */,
+			);
+			path = Cont;
+			sourceTree = "<group>";
+		};
+		659E9034228E03EA00DCDB7A = {
+			isa = PBXGroup;
+			children = (
+				65F2C36322A13E61003C4C9D /* Incubating Libraries - WIP */,
+				659E903F228E03EA00DCDB7A /* Monyo */,
+				659E9054228E03EC00DCDB7A /* MonyoTests */,
+				659E903E228E03EA00DCDB7A /* Products */,
+				906EB528A4902A78322A04BB /* Pods */,
+				59C9D647F9525E744BCAD95E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		659E903E228E03EA00DCDB7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				659E903D228E03EA00DCDB7A /* Monyo.app */,
+				659E9051228E03EC00DCDB7A /* MonyoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		659E903F228E03EA00DCDB7A /* Monyo */ = {
+			isa = PBXGroup;
+			children = (
+				6517CAA3229EEF320094ABE6 /* Start.swift */,
+				6517CA91229EEEE40094ABE6 /* Model */,
+				6517CA8F229EEEE40094ABE6 /* Update */,
+				6517CAA8229F0B220094ABE6 /* Commands */,
+				6517CA93229EEEE40094ABE6 /* UI */,
+				659E9047228E03EB00DCDB7A /* Assets.xcassets */,
+				659E9049228E03EB00DCDB7A /* LaunchScreen.storyboard */,
+				659E904C228E03EB00DCDB7A /* Info.plist */,
+			);
+			path = Monyo;
+			sourceTree = "<group>";
+		};
+		659E9054228E03EC00DCDB7A /* MonyoTests */ = {
+			isa = PBXGroup;
+			children = (
+				659E9055228E03EC00DCDB7A /* ModelUpdateTests.swift */,
+				6542FB392296DCB500419846 /* CommandTests.swift */,
+				659E9057228E03EC00DCDB7A /* Info.plist */,
+			);
+			path = MonyoTests;
+			sourceTree = "<group>";
+		};
+		659E9060228E043B00DCDB7A /* Monzo */ = {
+			isa = PBXGroup;
+			children = (
+				659E9061228E047900DCDB7A /* Auth */,
+				659E9065228E047C00DCDB7A /* Account */,
+				659E9068228E049A00DCDB7A /* Transaction */,
+				659E9076228E092100DCDB7A /* Error */,
+				65CA7CF62294292B000A2198 /* Decoder */,
+				659E9074228E04DB00DCDB7A /* Utility.swift */,
+			);
+			path = Monzo;
+			sourceTree = "<group>";
+		};
+		659E9061228E047900DCDB7A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				659E9062228E047900DCDB7A /* UnconfidentialBaseCredentials.swift */,
+				659E9063228E047900DCDB7A /* Tokens.swift */,
+				659E9064228E047900DCDB7A /* URLRequest+Auth.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		659E9065228E047C00DCDB7A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				659E9066228E047C00DCDB7A /* URLRequest+Account.swift */,
+				659E9067228E047C00DCDB7A /* Account.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		659E9068228E049A00DCDB7A /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				659E9069228E049A00DCDB7A /* TransactionQueryOptions.swift */,
+				659E906A228E049A00DCDB7A /* URLRequest+Transaction.swift */,
+				659E906B228E049A00DCDB7A /* Transaction.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		659E9076228E092100DCDB7A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				659E9077228E094100DCDB7A /* ErrorResponse.swift */,
+				65CA7CF922942984000A2198 /* MonzoError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		65CA7CF62294292B000A2198 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				65CA7CF722942953000A2198 /* Decoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		65F2C36322A13E61003C4C9D /* Incubating Libraries - WIP */ = {
+			isa = PBXGroup;
+			children = (
+				65200F05228E0CAD00D5BC48 /* Cont */,
+				659E9060228E043B00DCDB7A /* Monzo */,
+				6517CA7F229984770094ABE6 /* Program */,
+				6517CAA7229F092E0094ABE6 /* Debug */,
+			);
+			path = "Incubating Libraries - WIP";
+			sourceTree = "<group>";
+		};
+		906EB528A4902A78322A04BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA855E97349A8CBC394C2EEB /* Pods-Monyo.debug.xcconfig */,
+				2515A747E3EF3EDD72F57B2E /* Pods-Monyo.release.xcconfig */,
+				F441141854504D8D7F01F53D /* Pods-MonyoTests.debug.xcconfig */,
+				BBC59B9E4A83A26327663996 /* Pods-MonyoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		659E903C228E03EA00DCDB7A /* Monyo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659E905A228E03EC00DCDB7A /* Build configuration list for PBXNativeTarget "Monyo" */;
+			buildPhases = (
+				8A558F00D4577AAD40C56DA0 /* [CP] Check Pods Manifest.lock */,
+				659E9039228E03EA00DCDB7A /* Sources */,
+				659E903A228E03EA00DCDB7A /* Frameworks */,
+				659E903B228E03EA00DCDB7A /* Resources */,
+				38705E7C18FFA2A2EF22DCAE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Monyo;
+			productName = Monyo;
+			productReference = 659E903D228E03EA00DCDB7A /* Monyo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		659E9050228E03EC00DCDB7A /* MonyoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659E905D228E03EC00DCDB7A /* Build configuration list for PBXNativeTarget "MonyoTests" */;
+			buildPhases = (
+				A17B02EE6FE8DE82BE1E540C /* [CP] Check Pods Manifest.lock */,
+				659E904D228E03EC00DCDB7A /* Sources */,
+				659E904E228E03EC00DCDB7A /* Frameworks */,
+				659E904F228E03EC00DCDB7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659E9053228E03EC00DCDB7A /* PBXTargetDependency */,
+			);
+			name = MonyoTests;
+			productName = MonyoTests;
+			productReference = 659E9051228E03EC00DCDB7A /* MonyoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		659E9035228E03EA00DCDB7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Daniel Haight";
+				TargetAttributes = {
+					659E903C228E03EA00DCDB7A = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					659E9050228E03EC00DCDB7A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 659E903C228E03EA00DCDB7A;
+					};
+				};
+			};
+			buildConfigurationList = 659E9038228E03EA00DCDB7A /* Build configuration list for PBXProject "Monyo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 659E9034228E03EA00DCDB7A;
+			productRefGroup = 659E903E228E03EA00DCDB7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				659E903C228E03EA00DCDB7A /* Monyo */,
+				659E9050228E03EC00DCDB7A /* MonyoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		659E903B228E03EA00DCDB7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659E904B228E03EB00DCDB7A /* LaunchScreen.storyboard in Resources */,
+				659E9048228E03EB00DCDB7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659E904F228E03EC00DCDB7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38705E7C18FFA2A2EF22DCAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monyo/Pods-Monyo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monyo/Pods-Monyo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Monyo/Pods-Monyo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A558F00D4577AAD40C56DA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Monyo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A17B02EE6FE8DE82BE1E540C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonyoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		659E9039228E03EA00DCDB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659E9071228E04AF00DCDB7A /* TransactionQueryOptions.swift in Sources */,
+				659E9072228E04AF00DCDB7A /* URLRequest+Transaction.swift in Sources */,
+				6517CAC122A0778E0094ABE6 /* TransactionTableViewCell.swift in Sources */,
+				6517CA81229985350094ABE6 /* Program.swift in Sources */,
+				659E906C228E04A800DCDB7A /* UnconfidentialBaseCredentials.swift in Sources */,
+				659E9078228E094100DCDB7A /* ErrorResponse.swift in Sources */,
+				6517CABF229F37870094ABE6 /* Authentication.swift in Sources */,
+				6517CAB5229F0D3C0094ABE6 /* Debug.swift in Sources */,
+				6517CAA1229EEEE40094ABE6 /* TransactionListViewController.swift in Sources */,
+				6517CAAE229F0B220094ABE6 /* Util.swift in Sources */,
+				659E9075228E04DC00DCDB7A /* Utility.swift in Sources */,
+				6517CABD229F33D70094ABE6 /* EquatableError.swift in Sources */,
+				65CA7CFA22942984000A2198 /* MonzoError.swift in Sources */,
+				659E906F228E04AC00DCDB7A /* URLRequest+Account.swift in Sources */,
+				6517CAA2229EEEE40094ABE6 /* AuthenticationViewController.swift in Sources */,
+				6517CB0E22A0BFD30094ABE6 /* BaseCredentials.swift in Sources */,
+				6517CAB7229F10600094ABE6 /* MonyoError.swift in Sources */,
+				6517CB1122A0D7220094ABE6 /* Mocks.swift in Sources */,
+				6517CB0C22A08F760094ABE6 /* IconView.swift in Sources */,
+				6517CAC522A07F480094ABE6 /* TransactionRowView.swift in Sources */,
+				6517CA9D229EEEE40094ABE6 /* Update.swift in Sources */,
+				6517CAB0229F0B220094ABE6 /* World.swift in Sources */,
+				6517CAB9229F1CE00094ABE6 /* UIViewController+embedding.swift in Sources */,
+				659E9073228E04AF00DCDB7A /* Transaction.swift in Sources */,
+				6517CAA4229EEF320094ABE6 /* Start.swift in Sources */,
+				6517CA9F229EEEE40094ABE6 /* RootViewController.swift in Sources */,
+				6517CAAD229F0B220094ABE6 /* Commands.swift in Sources */,
+				659E9041228E03EA00DCDB7A /* AppDelegate.swift in Sources */,
+				659E906D228E04A800DCDB7A /* Tokens.swift in Sources */,
+				65200F04228E0CA800D5BC48 /* Cont.swift in Sources */,
+				659E906E228E04A800DCDB7A /* URLRequest+Auth.swift in Sources */,
+				6517CAAF229F0B220094ABE6 /* Command+Combine.swift in Sources */,
+				6517CA9E229EEEE40094ABE6 /* Model.swift in Sources */,
+				65CA7CF822942953000A2198 /* Decoder.swift in Sources */,
+				659E9070228E04AC00DCDB7A /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659E904D228E03EC00DCDB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659E9056228E03EC00DCDB7A /* ModelUpdateTests.swift in Sources */,
+				6542FB3A2296DCB500419846 /* CommandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		659E9053228E03EC00DCDB7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 659E903C228E03EA00DCDB7A /* Monyo */;
+			targetProxy = 659E9052228E03EC00DCDB7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		659E9049228E03EB00DCDB7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659E904A228E03EB00DCDB7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		659E9058228E03EC00DCDB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		659E9059228E03EC00DCDB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		659E905B228E03EC00DCDB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA855E97349A8CBC394C2EEB /* Pods-Monyo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WG82JJ7TD;
+				INFOPLIST_FILE = Monyo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.haight.Monyo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		659E905C228E03EC00DCDB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2515A747E3EF3EDD72F57B2E /* Pods-Monyo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WG82JJ7TD;
+				INFOPLIST_FILE = Monyo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.haight.Monyo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		659E905E228E03EC00DCDB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F441141854504D8D7F01F53D /* Pods-MonyoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WG82JJ7TD;
+				INFOPLIST_FILE = MonyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.haight.MonyoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monyo.app/Monyo";
+			};
+			name = Debug;
+		};
+		659E905F228E03EC00DCDB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC59B9E4A83A26327663996 /* Pods-MonyoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WG82JJ7TD;
+				INFOPLIST_FILE = MonyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.haight.MonyoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monyo.app/Monyo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		659E9038228E03EA00DCDB7A /* Build configuration list for PBXProject "Monyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659E9058228E03EC00DCDB7A /* Debug */,
+				659E9059228E03EC00DCDB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659E905A228E03EC00DCDB7A /* Build configuration list for PBXNativeTarget "Monyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659E905B228E03EC00DCDB7A /* Debug */,
+				659E905C228E03EC00DCDB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659E905D228E03EC00DCDB7A /* Build configuration list for PBXNativeTarget "MonyoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659E905E228E03EC00DCDB7A /* Debug */,
+				659E905F228E03EC00DCDB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 659E9035228E03EA00DCDB7A /* Project object */;
+}

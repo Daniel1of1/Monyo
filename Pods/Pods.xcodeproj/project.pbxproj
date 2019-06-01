@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08370B8B3BD5E4D7EFF57AF2ED39265F /* Pods-Monyo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB24D143D093F62C0AA1A845DB829163 /* Pods-Monyo-dummy.m */; };
+		1FD6C245354FEBD8FE1675E4AE41601D /* TORoundedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C3D85037F39CCC594FEB06B51E6C60 /* TORoundedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6237181AA74F7C6DA60032707B90FF71 /* Pods-MonyoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA28D2E143938C42534C086A00695090 /* Pods-MonyoTests-dummy.m */; };
+		789734F143C75BE79F5404708E2D7B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8B542A004505BAE99085140E5392D725 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B8DA2A1DAF189EC1819BEC6B851C29DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CB401D32FB0795353B5A94E3D3B7B3E3 /* TORoundedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D8ED8B5AE6EA5B39312F6F17F6A9BE /* TORoundedButton-dummy.m */; };
+		CC471F3FFDC1F06FF3B2ACEADFF861E3 /* Pods-Monyo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFF8714AD492460501E363C148F2965 /* Pods-Monyo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1356B7EBE2A12DB54042CBFCBCD55F2 /* Pods-MonyoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8943C97AC4F1E872AD1360003F048883 /* Pods-MonyoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF38F60C6544094FCB6BA0FFFCC9EF9A /* TORoundedButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A653EC438CC20CD20E47F9BCDF74B083 /* TORoundedButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC32C28DFFA3B8E56BF3760DE1FB26E5 /* TORoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D05B368CD0EA179197E9CF565D0119 /* TORoundedButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ED7B44F02C8CC264DB10978823E4716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6017893E50DE7FF7D310F8DBABBECE5A;
+			remoteInfo = TORoundedButton;
+		};
+		5A770FE7766D7C00A35670E6ADC614F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A399C09ABE598C29E4F4EC9AC42E1091;
+			remoteInfo = "Pods-Monyo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31A3D80BF145C5C05160A3DD6C35BE71 /* Pods-MonyoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonyoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3AFF8714AD492460501E363C148F2965 /* Pods-Monyo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Monyo-umbrella.h"; sourceTree = "<group>"; };
+		3B1FC3D19767F68F1023607C1AD84E54 /* Pods-Monyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monyo.debug.xcconfig"; sourceTree = "<group>"; };
+		3C111F1CE22A31701BF89B9644976251 /* Pods_Monyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Monyo.framework; path = "Pods-Monyo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2877B70A2DC7B07B9804B340581A33 /* Pods-Monyo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Monyo.modulemap"; sourceTree = "<group>"; };
+		5F2A51F382F0296B3CC9D4F2EEE2A327 /* Pods-Monyo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Monyo-Info.plist"; sourceTree = "<group>"; };
+		6D13992D8EFE3673F6CF65A8DFBDC399 /* TORoundedButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TORoundedButton.modulemap; sourceTree = "<group>"; };
+		6DE0CA9AB4E7BB10C20FE9CA17CF558F /* Pods-MonyoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonyoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7276E6CF3775F07BA1444755C2051125 /* Pods-Monyo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Monyo-acknowledgements.plist"; sourceTree = "<group>"; };
+		76D05B368CD0EA179197E9CF565D0119 /* TORoundedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TORoundedButton.m; path = TORoundedButton/TORoundedButton.m; sourceTree = "<group>"; };
+		7D32B326D99E6EE82ADC95930696533A /* Pods-MonyoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonyoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8943C97AC4F1E872AD1360003F048883 /* Pods-MonyoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonyoTests-umbrella.h"; sourceTree = "<group>"; };
+		8BCD5E95E008A6F3C3DABF1CFCBD3D2B /* TORoundedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TORoundedButton-prefix.pch"; sourceTree = "<group>"; };
+		9194E60B365025A73B5D7A0E8E008D5D /* Pods-Monyo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Monyo-frameworks.sh"; sourceTree = "<group>"; };
+		91D8ED8B5AE6EA5B39312F6F17F6A9BE /* TORoundedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TORoundedButton-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5FD0DAB5D4C909699DF29B4E1E488DD /* Pods-MonyoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonyoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6313100E90B2050AA3D9394FB5DEA0E /* TORoundedButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TORoundedButton.xcconfig; sourceTree = "<group>"; };
+		A653EC438CC20CD20E47F9BCDF74B083 /* TORoundedButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TORoundedButton-umbrella.h"; sourceTree = "<group>"; };
+		A6E0642B348A6B1BF93EC9BCA3386A3B /* Pods-MonyoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonyoTests-Info.plist"; sourceTree = "<group>"; };
+		B54573F9DDAE94B2F240B56949E9B3E8 /* Pods-Monyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monyo.release.xcconfig"; sourceTree = "<group>"; };
+		B56A4E5BF8E34D7E5DF51D3702DFA751 /* Pods-MonyoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MonyoTests.modulemap"; sourceTree = "<group>"; };
+		CA28D2E143938C42534C086A00695090 /* Pods-MonyoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonyoTests-dummy.m"; sourceTree = "<group>"; };
+		D0C3CB484872E4C7F2EDB624C146A4F9 /* Pods-Monyo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Monyo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D3C3D85037F39CCC594FEB06B51E6C60 /* TORoundedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TORoundedButton.h; path = TORoundedButton/TORoundedButton.h; sourceTree = "<group>"; };
+		E02796E5AC5AA70FFCF0FAC6A3FE7DB6 /* TORoundedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TORoundedButton.framework; path = TORoundedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E446CF5C88832BB167CC7667C751CEE6 /* TORoundedButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TORoundedButton-Info.plist"; sourceTree = "<group>"; };
+		E507296D73B35B141D9CD9CED0049E87 /* Pods_MonyoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MonyoTests.framework; path = "Pods-MonyoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB24D143D093F62C0AA1A845DB829163 /* Pods-Monyo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Monyo-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13FC65E75CA89DAF8F58CCA834536700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789734F143C75BE79F5404708E2D7B82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D5E86B4EFEF522F9F1712C9E8EBE150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B542A004505BAE99085140E5392D725 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51D4E880077F3D5B63F2531BEFB99C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DA2A1DAF189EC1819BEC6B851C29DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2576A6FF7502CF865213481AE3C2E4F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D13992D8EFE3673F6CF65A8DFBDC399 /* TORoundedButton.modulemap */,
+				A6313100E90B2050AA3D9394FB5DEA0E /* TORoundedButton.xcconfig */,
+				91D8ED8B5AE6EA5B39312F6F17F6A9BE /* TORoundedButton-dummy.m */,
+				E446CF5C88832BB167CC7667C751CEE6 /* TORoundedButton-Info.plist */,
+				8BCD5E95E008A6F3C3DABF1CFCBD3D2B /* TORoundedButton-prefix.pch */,
+				A653EC438CC20CD20E47F9BCDF74B083 /* TORoundedButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TORoundedButton";
+			sourceTree = "<group>";
+		};
+		2FD732DA984425AAC33A929B8AE5B0C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D8D08DEAC14F68C36A03CAA23AB2EE9 /* TORoundedButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D8D08DEAC14F68C36A03CAA23AB2EE9 /* TORoundedButton */ = {
+			isa = PBXGroup;
+			children = (
+				D3C3D85037F39CCC594FEB06B51E6C60 /* TORoundedButton.h */,
+				76D05B368CD0EA179197E9CF565D0119 /* TORoundedButton.m */,
+				2576A6FF7502CF865213481AE3C2E4F5 /* Support Files */,
+			);
+			name = TORoundedButton;
+			path = TORoundedButton;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C1BCAE95E08590218E9D08275B8A578E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7D5A094AFA5E7E8FB907E7123262145 /* Pods-Monyo */,
+				CCF37F655AF4BD877B90C27656350A9A /* Pods-MonyoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CCF37F655AF4BD877B90C27656350A9A /* Pods-MonyoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B56A4E5BF8E34D7E5DF51D3702DFA751 /* Pods-MonyoTests.modulemap */,
+				7D32B326D99E6EE82ADC95930696533A /* Pods-MonyoTests-acknowledgements.markdown */,
+				31A3D80BF145C5C05160A3DD6C35BE71 /* Pods-MonyoTests-acknowledgements.plist */,
+				CA28D2E143938C42534C086A00695090 /* Pods-MonyoTests-dummy.m */,
+				A6E0642B348A6B1BF93EC9BCA3386A3B /* Pods-MonyoTests-Info.plist */,
+				8943C97AC4F1E872AD1360003F048883 /* Pods-MonyoTests-umbrella.h */,
+				A5FD0DAB5D4C909699DF29B4E1E488DD /* Pods-MonyoTests.debug.xcconfig */,
+				6DE0CA9AB4E7BB10C20FE9CA17CF558F /* Pods-MonyoTests.release.xcconfig */,
+			);
+			name = "Pods-MonyoTests";
+			path = "Target Support Files/Pods-MonyoTests";
+			sourceTree = "<group>";
+		};
+		CE3FAEABC4258FAA2500AA43C18E9574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C111F1CE22A31701BF89B9644976251 /* Pods_Monyo.framework */,
+				E507296D73B35B141D9CD9CED0049E87 /* Pods_MonyoTests.framework */,
+				E02796E5AC5AA70FFCF0FAC6A3FE7DB6 /* TORoundedButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2FD732DA984425AAC33A929B8AE5B0C2 /* Pods */,
+				CE3FAEABC4258FAA2500AA43C18E9574 /* Products */,
+				C1BCAE95E08590218E9D08275B8A578E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7D5A094AFA5E7E8FB907E7123262145 /* Pods-Monyo */ = {
+			isa = PBXGroup;
+			children = (
+				4D2877B70A2DC7B07B9804B340581A33 /* Pods-Monyo.modulemap */,
+				D0C3CB484872E4C7F2EDB624C146A4F9 /* Pods-Monyo-acknowledgements.markdown */,
+				7276E6CF3775F07BA1444755C2051125 /* Pods-Monyo-acknowledgements.plist */,
+				FB24D143D093F62C0AA1A845DB829163 /* Pods-Monyo-dummy.m */,
+				9194E60B365025A73B5D7A0E8E008D5D /* Pods-Monyo-frameworks.sh */,
+				5F2A51F382F0296B3CC9D4F2EEE2A327 /* Pods-Monyo-Info.plist */,
+				3AFF8714AD492460501E363C148F2965 /* Pods-Monyo-umbrella.h */,
+				3B1FC3D19767F68F1023607C1AD84E54 /* Pods-Monyo.debug.xcconfig */,
+				B54573F9DDAE94B2F240B56949E9B3E8 /* Pods-Monyo.release.xcconfig */,
+			);
+			name = "Pods-Monyo";
+			path = "Target Support Files/Pods-Monyo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B29D40DA68C54FAFD563ACFE857BEE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1356B7EBE2A12DB54042CBFCBCD55F2 /* Pods-MonyoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499402A278C8FFA193348FE4AA48DEA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF38F60C6544094FCB6BA0FFFCC9EF9A /* TORoundedButton-umbrella.h in Headers */,
+				1FD6C245354FEBD8FE1675E4AE41601D /* TORoundedButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B16FFD49BE2229399B918BEA3B9031 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC471F3FFDC1F06FF3B2ACEADFF861E3 /* Pods-Monyo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09ACC485E1F50BCFC84C3375FC9089C2 /* Pods-MonyoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454C6854BFCEF806C75E510331A04FB4 /* Build configuration list for PBXNativeTarget "Pods-MonyoTests" */;
+			buildPhases = (
+				2B29D40DA68C54FAFD563ACFE857BEE0 /* Headers */,
+				A9BE1A8CAF47219BB2AEED1BB3E8B4B4 /* Sources */,
+				D51D4E880077F3D5B63F2531BEFB99C1 /* Frameworks */,
+				5880668DC64E410880C99759B7B40D89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E205BF41E09743CC2006D470ABCFE17 /* PBXTargetDependency */,
+			);
+			name = "Pods-MonyoTests";
+			productName = "Pods-MonyoTests";
+			productReference = E507296D73B35B141D9CD9CED0049E87 /* Pods_MonyoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6017893E50DE7FF7D310F8DBABBECE5A /* TORoundedButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05659B02F9D78FF474EC5F6DB5C8C4EA /* Build configuration list for PBXNativeTarget "TORoundedButton" */;
+			buildPhases = (
+				499402A278C8FFA193348FE4AA48DEA2 /* Headers */,
+				8215A3E2D1A8AB039415FADF02A44947 /* Sources */,
+				7D5E86B4EFEF522F9F1712C9E8EBE150 /* Frameworks */,
+				362E0ABE7A6D3908343268B280382454 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TORoundedButton;
+			productName = TORoundedButton;
+			productReference = E02796E5AC5AA70FFCF0FAC6A3FE7DB6 /* TORoundedButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A399C09ABE598C29E4F4EC9AC42E1091 /* Pods-Monyo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1227BE42ABF9DE87F7119305A7DCAFDC /* Build configuration list for PBXNativeTarget "Pods-Monyo" */;
+			buildPhases = (
+				82B16FFD49BE2229399B918BEA3B9031 /* Headers */,
+				E0EF1D902B0DE6488DC0FE0839A05839 /* Sources */,
+				13FC65E75CA89DAF8F58CCA834536700 /* Frameworks */,
+				EF0CB31045BC25F804118DF2C44D2A33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77E121518EF143A53DC759F088886685 /* PBXTargetDependency */,
+			);
+			name = "Pods-Monyo";
+			productName = "Pods-Monyo";
+			productReference = 3C111F1CE22A31701BF89B9644976251 /* Pods_Monyo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CE3FAEABC4258FAA2500AA43C18E9574 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A399C09ABE598C29E4F4EC9AC42E1091 /* Pods-Monyo */,
+				09ACC485E1F50BCFC84C3375FC9089C2 /* Pods-MonyoTests */,
+				6017893E50DE7FF7D310F8DBABBECE5A /* TORoundedButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		362E0ABE7A6D3908343268B280382454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5880668DC64E410880C99759B7B40D89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0CB31045BC25F804118DF2C44D2A33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8215A3E2D1A8AB039415FADF02A44947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB401D32FB0795353B5A94E3D3B7B3E3 /* TORoundedButton-dummy.m in Sources */,
+				EC32C28DFFA3B8E56BF3760DE1FB26E5 /* TORoundedButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9BE1A8CAF47219BB2AEED1BB3E8B4B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6237181AA74F7C6DA60032707B90FF71 /* Pods-MonyoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EF1D902B0DE6488DC0FE0839A05839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08370B8B3BD5E4D7EFF57AF2ED39265F /* Pods-Monyo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E205BF41E09743CC2006D470ABCFE17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Monyo";
+			target = A399C09ABE598C29E4F4EC9AC42E1091 /* Pods-Monyo */;
+			targetProxy = 5A770FE7766D7C00A35670E6ADC614F1 /* PBXContainerItemProxy */;
+		};
+		77E121518EF143A53DC759F088886685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TORoundedButton;
+			target = 6017893E50DE7FF7D310F8DBABBECE5A /* TORoundedButton */;
+			targetProxy = 2ED7B44F02C8CC264DB10978823E4716 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4551352BBD755753B4146C22B35129A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6313100E90B2050AA3D9394FB5DEA0E /* TORoundedButton.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TORoundedButton/TORoundedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TORoundedButton/TORoundedButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TORoundedButton/TORoundedButton.modulemap";
+				PRODUCT_MODULE_NAME = TORoundedButton;
+				PRODUCT_NAME = TORoundedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		625B7E14A88AC5F940637F4F1410421B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1FC3D19767F68F1023607C1AD84E54 /* Pods-Monyo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Monyo/Pods-Monyo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Monyo/Pods-Monyo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		687E0DE98622E59D57418971D22D54E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5FD0DAB5D4C909699DF29B4E1E488DD /* Pods-MonyoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MonyoTests/Pods-MonyoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MonyoTests/Pods-MonyoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E0CC6975BF8EF7E3BFD28BB57843477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6313100E90B2050AA3D9394FB5DEA0E /* TORoundedButton.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TORoundedButton/TORoundedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TORoundedButton/TORoundedButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TORoundedButton/TORoundedButton.modulemap";
+				PRODUCT_MODULE_NAME = TORoundedButton;
+				PRODUCT_NAME = TORoundedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D22AF53457903CB24FD6829FBF1C7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DE0CA9AB4E7BB10C20FE9CA17CF558F /* Pods-MonyoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MonyoTests/Pods-MonyoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MonyoTests/Pods-MonyoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC17BB6491F688872695FBFFFD85EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54573F9DDAE94B2F240B56949E9B3E8 /* Pods-Monyo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Monyo/Pods-Monyo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Monyo/Pods-Monyo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05659B02F9D78FF474EC5F6DB5C8C4EA /* Build configuration list for PBXNativeTarget "TORoundedButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4551352BBD755753B4146C22B35129A9 /* Debug */,
+				7E0CC6975BF8EF7E3BFD28BB57843477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1227BE42ABF9DE87F7119305A7DCAFDC /* Build configuration list for PBXNativeTarget "Pods-Monyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625B7E14A88AC5F940637F4F1410421B /* Debug */,
+				DC17BB6491F688872695FBFFFD85EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		454C6854BFCEF806C75E510331A04FB4 /* Build configuration list for PBXNativeTarget "Pods-MonyoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687E0DE98622E59D57418971D22D54E0 /* Debug */,
+				8D22AF53457903CB24FD6829FBF1C7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

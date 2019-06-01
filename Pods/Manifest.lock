@@ -1,0 +1,22 @@
+PODS:
+  - TORoundedButton (1.0.0)
+
+DEPENDENCIES:
+  - TORoundedButton (from `https://github.com/TimOliver/TORoundedButton.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  TORoundedButton:
+    :branch: master
+    :git: https://github.com/TimOliver/TORoundedButton.git
+
+CHECKOUT OPTIONS:
+  TORoundedButton:
+    :commit: c967dd534aa245504dfd2cb749608d5f85cda6c3
+    :git: https://github.com/TimOliver/TORoundedButton.git
+
+SPEC CHECKSUMS:
+  TORoundedButton: b73a05520a33f2ed101bcbd87d017c0affbe9ff2
+
+PODFILE CHECKSUM: 4f51b27078ec7f19f70afb0de2cc4fff43f0c71d
+
+COCOAPODS: 1.7.0
