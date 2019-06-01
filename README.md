@@ -89,17 +89,17 @@ There is a fair amount of the model that revolves around data structures that Mo
 #### How to build new features
 With this set up it means we can draw effective lines for building and testing (ignoring the World/Command blur for now).
 1. Update the model to include any new state that will be introduced.
-- Add any Msgs that represent new inputs to the program (if they exist)
-- Update the `update` function to deal with any new inputs and any change in behavior
+2. Add any Msgs that represent new inputs to the program (if they exist)
+3. Update the `update` function to deal with any new inputs and any change in behavior
 - *Note* - Up until now _everything_ (except the Cmd return value in the update function) consists of pure values and functions. And hence very easy to test confidently. Considering the update function is essentially the entirity of the app's "business logic", you can be fairly confident that the internal logic of your app is sound if you have code coverage of the entire update function.
-- Wrap any side effects that need to be performed as a result of an update (if any) in [a] command structure[s]
+4. Wrap any side effects that need to be performed as a result of an update (if any) in [a] command structure[s]
 - *Note* Currently it is not easy to test these for equality. I have had different thoughts including simply adding an ID to `Command`s and ensuring they are all statically generated... among others. This is something that needs improving, but the surface area is small, see next point...
-- You can test commands each individually as well. (currently) all commands take a `World` parameter that represents any possible dependencies
+5. You can test commands each individually as well. (currently) all commands take a `World` parameter that represents any possible dependencies
 it has with the outside world. By mocking this, running the command and checking the return value, you can test that your command
 interacts with the outside world as you expect and it processes whatever it receives from the outside world correctly.
-- add UI - I make no attempt at a declarative UI and so these will be built in a "normal" iOS way, i.e quite stateful. That being said we have
+6. add UI - I make no attempt at a declarative UI and so these will be built in a "normal" iOS way, i.e quite stateful. That being said we have
 a very good destination for any complex logic, which is to say almost any decision making should be pushed down to `Update`/`Model` if it makes sense. And arguably for a fixed point in time, trait collection and frame, it is a pure function to a buffer of pixels ☺️
-- Testing the UI can be done by snapshot testing with high confidence. By convention almost all `UIView(Controller)` elements expose an update method
+7. Testing the UI can be done by snapshot testing with high confidence. By convention almost all `UIView(Controller)` elements expose an update method
 which updates the view based on the `model` (or a subset of it). So to test views we simply setup snapshot tests for any level of isolation of a component we want. (Note, unfortunately I haven't done this in the project yet)
 
 # Incubating Libraries / Experiments 
