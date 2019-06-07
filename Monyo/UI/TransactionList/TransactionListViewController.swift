@@ -1,9 +1,29 @@
 
 import UIKit
+import SwiftUI
+import Combine
+
+extension Transaction: Identifiable {}
+
+/// A wrapper to allow transactions to be bindable,
+/// - Note: should probably do this with the whole model
+class TransactionsHolder : BindableObject {
+    var transactions = [Transaction]() {
+        didSet {
+            didChange.send(())
+        }
+    }
+    var didChange = PassthroughSubject<Void,Never>()
+    
+    init(transactions: [Transaction]) {
+        self.transactions = transactions
+    }
+}
+
 
 /// A very basic (for the moment) UITableViewController to show a list
 /// of cells representing `Transaction`s
-final class TransactionListViewController: UITableViewController {
+final class TransactionListViewController: UIViewController {
     
     // MARK: - UIViewController
     
@@ -12,58 +32,26 @@ final class TransactionListViewController: UITableViewController {
         setup()
     }
     
-    // MARK: - UITableViewController / UITableViewDataSource
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return transactions.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TransactionTableViewCell
-        let transaction = transactions[indexPath.row]
-        cell.update(transaction: transaction)
-        return cell
-    }
-    
     // MARK: - Properties
     
-    private var transactions = [Transaction]()
+    private var transactionHolder = TransactionsHolder(transactions: [])
     
     // MARK: - Setup
     
     func setup() {
-        tableView.register(TransactionTableViewCell.self, forCellReuseIdentifier: "Cell")
-        self.refreshControl = UIRefreshControl()
-        self.refreshControl?.addTarget(self, action: #selector(getLatest), for: .valueChanged)
-        // FIXME: this loading state should be on the model, in the same way it is
-        // for `Authentication`
-        self.refreshControl?.beginRefreshing()
-    }
-    
-    // MARK: - User Interaction
-    
-    @objc func getLatest() {
-        Current.update(message: .getLatest)
-        // FIXME: this loading state should be on the model, in the same way it is
-        // for `Authentication`
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-            self.refreshControl?.endRefreshing()
-        }
+        let hostedView = UIHostingController(rootView: SwiftUITransactionList(transactionHolder: transactionHolder))
+        self.add(hostedView)
+        hostedView.view.frame = self.view.bounds
     }
     
     // MARK: - Update
     
     func update(model: Model) {
         let filtered = model.transactions.filter {  !$0.description.contains("pot_") }
-        if filtered != self.transactions {
-            self.transactions = filtered
+        if filtered != self.transactionHolder.transactions {
             
             DispatchQueue.main.async {
-                // FIXME: this is just for show at the moment, to make feed look cleaner
-                // ideally these would be grouped with the relevant purchase
-                // currently not dealing with pots
-                self.tableView.reloadData()
-                self.refreshControl?.endRefreshing()
+                self.transactionHolder.transactions = filtered
             }
         }
     }

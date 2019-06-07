@@ -75,7 +75,7 @@ private let babylonians: [(String,String)] = [
     ("Michael Brown", "@mluisbrown"),
     ("Michał Kwiecień", "@kwiecien_co"),
     ("Nicola Di Pol", "@nicola.dipol"),
-    ("Olivier Halligon", "@AliSoftware"),
+    ("Olivier Halligon", "@aligatr"),
     ("Rui Peres", "@peres"),
     ("Sergey Shulga", "@SergDort"),
     ("Simon Cass", "@codercass"),
