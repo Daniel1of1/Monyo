@@ -2,6 +2,8 @@
 
 A little demo app to use some of the features of the monzo api (somewhat repurposed as babylon demo app).
 
+### Note: Some initial experiments adding in some `swiftUI` can be seen on the `iOS13` branch.
+
 ---
 
 # Usage
