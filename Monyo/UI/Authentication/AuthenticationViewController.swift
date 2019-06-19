@@ -61,7 +61,13 @@ final class AuthenticationViewController: UIViewController {
         debugButton.tappedHandler = {
             // FIXME: remove ASAP, need a better way to switch backends
             // inside `Debug`
-            Realworld.networkRequest = babylonNetworkMock
+            //Realworld.networkRequest = babylonNetworkMock
+
+//            Commands._fetchTokens =
+//                { authCode, clientID, clientSecret, redirectURI in
+//                    return Cont.pure(.success(Tokens(accessToken: "adsf", refreshToken: nil, expires: nil)))
+//            }
+//
             Current.update(message: .receievedAuthCode(authCode: "authCode", stateToken: Current.model.authentication.credentials.stateToken))
         }
         
