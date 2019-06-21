@@ -54,14 +54,14 @@ final class TransactionListViewController: UITableViewController {
     // MARK: - Update
     
     func update(model: Model) {
+        // FIXME: this is just for show at the moment, to make feed look cleaner
+        // ideally these would be grouped with the relevant purchase
+        // currently not dealing with pots
         let filtered = model.transactions.filter {  !$0.description.contains("pot_") }
         if filtered != self.transactions {
             self.transactions = filtered
             
             DispatchQueue.main.async {
-                // FIXME: this is just for show at the moment, to make feed look cleaner
-                // ideally these would be grouped with the relevant purchase
-                // currently not dealing with pots
                 self.tableView.reloadData()
                 self.refreshControl?.endRefreshing()
             }
